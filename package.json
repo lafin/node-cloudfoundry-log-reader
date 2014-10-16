@@ -1,14 +1,23 @@
 {
   "name": "node-cloudfoundry-log-reader",
+  "description": "Simple library for read log cloud foundry apps",
   "version": "0.0.1",
   "private": true,
-  "contributors": [
-    {
-      "name": "Sergey Kuvakin",
-      "email": "kuvakin@gmail.com"
-    }
+  "author": "lafin <kuvakin@gmail.com>",
+  "contributors": [],
+  "keywords": [
+    "api",
+    "log",
+    "cloudfoundry"
   ],
-  "scripts": {},
+  "repository": "lafin/node-cloudfoundry-log-reader",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "prepublish": "npm prune"
+  },
   "dependencies": {
     "request": "^2.45.0",
     "ws": "^0.4.32"
