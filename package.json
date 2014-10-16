@@ -1,0 +1,16 @@
+{
+  "name": "node-cloudfoundry-log-reader",
+  "version": "0.0.1",
+  "private": true,
+  "contributors": [
+    {
+      "name": "Sergey Kuvakin",
+      "email": "kuvakin@gmail.com"
+    }
+  ],
+  "scripts": {},
+  "dependencies": {
+    "request": "^2.45.0",
+    "ws": "^0.4.32"
+  }
+}
