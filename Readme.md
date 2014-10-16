@@ -22,9 +22,17 @@ var params = {
     }
 };
 
+/**
+ * Example: cf logs app-name --recent
+ */
+
 cf.recent(params, function (error, data) {
     console.log(data);
 });
+
+/**
+ * Example: cf logs app-name
+ */
 
 cf.tail(params, function (socket) {
     socket.on('open', function () {
@@ -41,6 +49,11 @@ cf.tail(params, function (socket) {
     });
 });
 ```
+
+### More Information
+
+* [Streaming logs](http://docs.run.pivotal.io/devguide/deploy-apps/streaming-logs.html)
+
 
 ### Contributors
 
