@@ -1,4 +1,4 @@
-### Simple library for read log cloud foundry apps
+### Simple library for read log cloud foundry apps (only for version CF 182 and older)
 ___
 
 ### Installation
@@ -18,6 +18,7 @@ var params = {
     endpoints: {
         loggregator: 'loggregator.cf-domain.com',
         login: 'login.cf-domain.com',
+        port: 4443, // port need only for ws (tail log) default value 4443
         ssl: true
     }
 };

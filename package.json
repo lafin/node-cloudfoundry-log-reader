@@ -1,8 +1,7 @@
 {
   "name": "node-cloudfoundry-log-reader",
   "description": "Simple library for read log cloud foundry apps",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.2",
   "author": "lafin <kuvakin@gmail.com>",
   "contributors": [],
   "keywords": [
