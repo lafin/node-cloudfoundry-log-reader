@@ -1,4 +1,4 @@
-### Simple library for read log cloud foundry apps (only for version CF 182 and older)
+### Simple library for read logs applications in Cloud Foundry (Pivotal) instances (only for version CF 182 and older)
 ___
 
 ### Installation
@@ -15,6 +15,7 @@ var params = {
     username: 'username',
     password: 'password',
     appGuid: 'guid',
+    clean: true, // clean data, default value false
     endpoints: {
         loggregator: 'loggregator.cf-domain.com',
         login: 'login.cf-domain.com',

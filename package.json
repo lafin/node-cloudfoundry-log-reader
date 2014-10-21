@@ -1,6 +1,6 @@
 {
   "name": "node-cloudfoundry-log-reader",
-  "description": "Simple library for read log cloud foundry apps",
+  "description": "Simple library for read logs applications in Cloud Foundry (Pivotal) instances",
   "version": "0.0.2",
   "author": "lafin <kuvakin@gmail.com>",
   "contributors": [],
