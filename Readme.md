@@ -15,7 +15,6 @@ var params = {
     username: 'username',
     password: 'password',
     appGuid: 'guid',
-    clean: true, // clean data, default value false
     endpoints: {
         loggregator: 'loggregator.cf-domain.com',
         login: 'login.cf-domain.com',
@@ -29,7 +28,7 @@ var params = {
  */
 
 cf.recent(params, function (error, data) {
-    console.log(data);
+    console.log(cf.clean(data));
 });
 
 /**
@@ -44,7 +43,7 @@ cf.tail(params, function (socket) {
         console.log('disconnected');
     });
     socket.on('message', function (data) {
-        console.log(data.toString());
+        console.log(cf.clean(data.toString()));
     });
     socket.on('error', function () {
         console.log(arguments);
