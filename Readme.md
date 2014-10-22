@@ -1,4 +1,4 @@
-### Simple library for read log cloud foundry apps (only for version CF 182 and older)
+### Simple library for read logs applications in Cloud Foundry (Pivotal) instances (only for version CF 182 and older)
 ___
 
 ### Installation
@@ -28,7 +28,7 @@ var params = {
  */
 
 cf.recent(params, function (error, data) {
-    console.log(data);
+    console.log(cf.clean(data));
 });
 
 /**
@@ -43,7 +43,7 @@ cf.tail(params, function (socket) {
         console.log('disconnected');
     });
     socket.on('message', function (data) {
-        console.log(data.toString());
+        console.log(cf.clean(data.toString()));
     });
     socket.on('error', function () {
         console.log(arguments);
